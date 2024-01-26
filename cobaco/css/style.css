@@ -1,0 +1,726 @@
+@charset "UTF-8";
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header .logo {
+  height: 160px;
+  width: auto;
+  position: relative;
+  margin: 50px 100px 0 50px;
+
+}
+
+.nav {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  display: flex;
+  padding: 0;
+}
+
+.nav_contents {
+  margin: 30px 30px 0 0;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.2rem;
+
+}
+
+.nav_contents:hover {
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart img {
+  display: flex;
+  height: 20px;
+  width: auto;
+  margin: 30px 0 0 0;
+}
+
+.cart img:hover {
+  opacity: 0.7;
+}
+
+.top img {
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+}
+.top p {
+  display: flex;
+  width: 45%;
+  color: #333;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+}
+
+.mail {
+    width: 330px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.mail:hover {
+  opacity: 0.7;
+}
+
+.midashi {
+    width: auto;
+    display: inline;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0.3rem;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+}
+
+.recommend {
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+.recommend ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.recommend li {
+  width: 210px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.recommend li:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.recommend .small {
+  font-size: 12px;
+  color: #333;
+  letter-spacing: 0.1rem;
+  margin: 0 auto;
+}
+
+.recommend .item_name {
+  font-family: serif;
+  font-size: 17px;
+  color: #333;
+  letter-spacing: 0.1rem;
+  margin: 7px auto;
+  letter-spacing: 0.2rem;
+}
+
+.recommend img {
+  width: 210px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.aaa {
+  display: flex;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 100;
+}
+
+.tag {
+  display: inline;
+  margin: 0 5px;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 5px;
+}
+
+.special {
+  width: 443px;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+
+.special img {
+  margin-top: 30px;
+  width: 443px;
+  height: auto;
+  display: flex;
+  text-align: center;
+}
+
+.special:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.feature {
+  width: 980px;
+  text-align: center;
+  margin: 0 auto 100px auto;
+
+}
+
+.feature ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature li {
+  margin: 10px;
+}
+
+.feature img {
+  width: 443px;
+  height: auto;
+}
+
+.feature .title {
+  color: #333;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+
+.feature li:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.column {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.column_list {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.column li {
+  width: 290px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.column img {
+  width: 287px;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.column .tag {
+  margin: -15px 0 0 20px;
+}
+
+.bbb {
+  display: flex;
+  margin-bottom: -15px;
+  position: relative;
+  z-index: 100;
+}
+
+.column .title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  color: #333;
+  margin: 10px 20px;
+}
+
+.column .honbun {
+  text-align: left;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  font-size: 13px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.column .kiji {
+  color: #4584B2;
+  font-size: 13px;
+  text-align: left;
+  padding: 0 20px;
+  display: flex;
+}
+
+.column .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.column .button a {
+  display: flex;
+  text-align: center;
+  border: 1px solid #4584B2;
+  width: 210px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column .button p {
+  font-size: 13px;
+  color: #4584B2;
+  margin: 0 auto;
+  font-size: 12px;
+  letter-spacing: 0.3rem;
+  width: 210px;
+  padding: 10px 0 10px 0;
+}
+
+.column .button a:hover {
+  background-color: #4584B2;
+}
+
+.column .button p:hover {
+  color: #fff;
+}
+
+.pickup {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.pickup .tag {
+  margin: -15px 0 0 20px;
+}
+
+.pickup_list {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pickup ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.pickup li {
+  width: 290px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.pickup img {
+  width: 287px;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.pickup .title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  color: #333;
+  margin: 10px 20px;
+}
+
+.pickup .honbun {
+  text-align: left;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  font-size: 13px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.pickup .kiji {
+  color: #4584B2;
+  font-size: 13px;
+  text-align: left;
+  padding: 0 20px;
+  display: flex;
+}
+
+.pickup .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.pickup .button a {
+  display: flex;
+  text-align: center;
+  border: 1px solid #4584B2;
+  width: 210px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pickup .button p {
+  font-size: 13px;
+  color: #4584B2;
+  margin: 0 auto;
+  font-size: 12px;
+  letter-spacing: 0.3rem;
+  width: 210px;
+  padding: 10px 0 10px 0;
+}
+
+.pickup .button a:hover {
+  background-color: #4584B2;
+}
+
+.pickup .button p:hover {
+  color: #fff;
+}
+
+.category {
+  width: 980px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.category ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.category li{
+  margin: 10px;
+}
+
+.category a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.category img {
+  width: auto;
+  height: 210px;
+}
+
+.category .name {
+  font-size: 12px;
+  color: #333;
+  letter-spacing: 0.3rem;
+  position: absolute;
+  margin: -35px 0 0 15px;
+}
+
+.category .logo {
+  height: 70px;
+  width: auto;
+  position:absolute;
+  margin: 125px 0 0 -420px;
+}
+
+.infomation {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infomation li {
+  display: flex;
+}
+
+.infomation_list {
+  width: 780px;
+  height: auto;
+  background-color: #E2E2E2;
+  border-radius: 10px;
+  text-align: left;
+  margin: -10px auto 100px auto;
+  padding: 20px;
+}
+
+.infomation_list .date {
+  font-size: 12px;
+  padding-bottom: 4px;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  color: #777;
+  display: inline;
+  text-align: left;
+  border-bottom: 0.5px solid #333;
+}
+
+.infomation a {
+  margin-top: 5px;
+}
+
+.infomation_list .topic {
+  font-size: 13px;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+  color: #333;
+  display: inline;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.infomation a:hover {
+  opacity: 0.7;
+}
+
+.instagram {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.instagram ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 860px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  padding: 0;
+}
+
+.instagram li {
+  margin: 5px 6px;
+}
+
+.instagram img {
+  width: 160px;
+  height: 160px;
+}
+
+.instagram a:hover {
+  opacity: 0.9;
+  transition: 1s;
+}
+
+footer {
+  background-color: #9e9e9e;
+  color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 860px;
+  height: auto;
+}
+
+.footer_menu a {
+  color: #fff;
+}
+
+.footer_midashi {
+  border-bottom: 1px solid #fff;
+  font-size: 12px;
+  letter-spacing: 0.3rem;
+  padding-bottom: 5px;
+}
+
+.footer_category {
+  width: 300px;
+}
+
+.footer_category ul {
+  padding: 0;
+}
+
+.footer_category a {
+  font-size: 14px;
+  line-height: 2rem;
+}
+
+.footer_category a:hover {
+  opacity: 0.5;
+}
+
+.footer_sub {
+  width: 200px;
+  margin-left: -180px;
+}
+
+.footer_sub a {
+  font-size: 14px;
+  line-height: 2rem;
+}
+
+.footer_feature {
+  margin-top: 40px;
+}
+
+.footer_sub a:hover {
+  opacity: 0.5;
+}
+
+.footer_kaiin {
+  justify-content: flex-end;
+}
+
+.footer_kaiin a {
+  font-size: 14px;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.footer_kaiin a:hover {
+  opacity: 0.5;
+}
+
+.kaiin_midashi {
+  position: relative;
+}
+
+.kaiin_midashi::after {
+  content: '';
+	display: block;
+	position: absolute;
+  right: 70%;
+	transform: translate(-50%);
+	bottom: -20px;
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+}
+
+.kaimono {
+  margin-top: 20px;
+}
+
+.kaiin_kouhan {
+  padding: 0;
+  margin: 20px 0;
+}
+
+.kouhan {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.kouhan::after {
+  content: '';
+	display: block;
+	position: absolute;
+  right: 76%;
+	transform: translate(-50%);
+	bottom: -10px;
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+}
+
+.kaiin_kouhan a{
+  font-size: 12px;
+}
+
+.footer_small {
+  display: flex;
+  width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+}
+
+
+.icon {
+  display: flex;
+  margin-top: -3px;
+  margin-left: 105px;
+}
+
+.icon img {
+  width: 18px;
+  height: auto;
+  margin: 0 20px 0 0;
+}
+
+.icon img:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,2159 @@
+@use "inc/setting" as inc_set;
+@use "inc/reset" as inc_re;
+
+#quality{
+  main{
+    font-family: serif;
+    .pc{
+      display: block;
+    }
+    .sp{
+      display: none;
+    }
+    .main_wrap{
+      width: 100vw;
+      text-align: center;
+      margin: 0 auto;
+      .main_cntnt.main_cntnt_01{
+        .top{
+          width: 100vw;
+          position: relative;
+          p{
+            color: #fff;
+            position: absolute;
+            top: 45%;
+            left: 48%;
+            font-size: 30px;
+          }
+        }
+        .main_inner{
+          width: 80vw;
+          margin: 50px auto 0 auto;
+          max-width: 1000px;
+          .tab{
+              display: flex;
+              justify-content: space-between;
+              .tab_in{
+                background-color: #004D4A;
+                color: #fff;
+                width: calc(90%/4);
+                padding: 15px 0;
+                cursor: pointer;
+                &.active{
+                  background-color: #fff;
+                  color: #004D4A;
+                  border: 1px solid #004D4A;
+                }
+              }
+            }
+            .content_area{
+              margin: 0 auto;
+              .content{
+                display: none;
+                &.active{
+                  display: block;
+                }
+              }
+              .content_01{
+                .kitchen{
+                  margin-top: 50px;
+                  .midashi{
+                    letter-spacing: -0.08em;
+                    white-space: nowrap;
+                    .spacing{
+                      letter-spacing: 0em;
+                    }
+                  }
+                  .title{
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    .font{
+                      color: #004D4A;
+                      font-size: 19px;
+                      display: flex;
+                      span{
+                        color: #000;
+                      }
+                    }
+                    .border{
+                      height: 1px;
+                      width:45%;
+                      background-color: #938055;
+                    }
+                  }
+                  .list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .inner{
+                      text-align: left;
+                      width: calc(95%/4);
+                      margin-bottom: 20px;
+                      .midashi{
+                        color: #004D4A;
+                        margin-top: 10px;
+                        p{
+                          font-size: 18px;
+                        }
+                      }
+                      .spacing{
+                        letter-spacing: 0em;
+                      }
+                      .text{
+                        margin-top: 10px;
+                        font-size: 14px;
+                        line-height: 1.3em;
+                      }
+                    }
+                  }
+                }
+                .restroom{
+                  margin-top: 50px;
+                  .title{
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    .font{
+                      color: #004D4A;
+                      font-size: 19px;
+                      display: flex;
+                      span{
+                        color: #000;
+                      }
+                    }
+                    .border{
+                      height: 1px;
+                      width:60%;
+                      background-color: #938055;
+                    }
+                  }
+                  .list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .inner{
+                      text-align: left;
+                      margin-bottom: 20px;
+                      width: calc(95%/4);
+                      .image{
+                        display: flex;
+                        img{
+                          width: 50%;
+                        }
+                      }
+                      .midashi{
+                        color: #004D4A;
+                        margin-top: 10px;
+                        font-size: 18px;
+
+                        .spacing{
+                          letter-spacing: 0em;
+                        }
+                      }
+                      .spacing{
+                        letter-spacing: 0em;
+                      }
+                      .text{
+                        margin-top: 10px;
+                        font-size: 14px;
+                        line-height: 1.3em;
+                      }
+                      .small{
+                        font-size: 10px;
+                      }
+                    }
+                  }
+                  .inner_02{
+                    .img{
+                      text-align: center;
+                      margin: 0 auto;
+                      width: 75%;
+                      img{
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+                .bathroom{
+                  margin-top: 50px;
+                  .title{
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    .font{
+                      color: #004D4A;
+                      font-size: 19px;
+                      display: flex;
+
+                      span{
+                        color: #000;
+                      }
+                    }
+                    .border{
+                      height: 1px;
+                      width:50%;
+                      background-color: #938055;
+                    }
+                  }
+                  .list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .inner{
+                      text-align: left;
+                      margin-bottom: 20px;
+                      width: calc(95%/4);
+                      .img{
+                        p{
+                          font-size: 10px;
+                          text-align: right;
+                        }
+                      }
+                      .text_area{
+                        white-space: nowrap;
+                        .small{
+                          font-size: 10px;
+                        }
+                      }
+                      .image{
+                        display: flex;
+                        img{
+                          width: 50%;
+                        }
+                      }
+                      .midashi{
+                        color: #004D4A;
+                        margin-top: 10px;
+                        font-size: 18px;
+                        letter-spacing: -0.08em;
+                      }
+                      .spacing{
+                        letter-spacing: 0.03em;
+                      }
+                      .text{
+                        margin-top: 10px;
+                        font-size: 14px;
+                        line-height: 1.3em;
+                      }
+                    }
+
+                    .sp{
+                      margin: -15px 0 20px 0;
+                      .text{
+                        font-size: 12px;
+                        line-height: 1.3em;
+                      }
+                      .small{
+                        font-size: 10px;
+                      }
+                    }
+                  }
+                }
+                .powderroom{
+                  margin-top: 50px;
+                  .title{
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    .font{
+                      color: #004D4A;
+                      font-size: 19px;
+                      display: flex;
+
+                      span{
+                        color: #000;
+                      }
+                    }
+                    .border{
+                      height: 1px;
+                      width:45%;
+                      background-color: #938055;
+                    }
+                  }
+                  .list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .inner{
+                      text-align: left;
+                      margin-bottom: 20px;
+                      width: calc(95%/4);
+                      .image{
+                        display: flex;
+                        img{
+                          width: 50%;
+                        }
+                      }
+                      .midashi{
+                        color: #004D4A;
+                        margin-top: 10px;
+                        font-size: 18px;
+                        letter-spacing: -0.08em;
+                      }
+                      .spacing{
+                        letter-spacing: 0em;
+                      }
+                      .text{
+                        margin-top: 10px;
+                        font-size: 14px;
+                        line-height: 1.3em;
+                      }
+                    }
+                  }
+                }
+                .chushaku{
+                  text-align: left;
+                  font-size: 10px;
+                  line-height: normal;
+                  margin-top: 100px;
+                }
+              }
+              .content_02{
+                line-height: 1.4em;
+                .security{
+                  text-align: center;
+                  .top{
+                    width: 100%;
+                    position: relative;
+                    margin: 10px auto;
+                    .image{
+                      width: 95%;
+                      padding-top: 50px;
+                    }
+                    .text{
+                      p{
+                        color: #004656;
+                        position: static;
+                        text-align: left;
+                        font-size: 27px;
+                        position: absolute;
+                        top: 7%;
+                        left: 5%;
+                        line-height: 1.3em;
+                      }
+                    }
+                  }
+                  .system{
+                    width: 90%;
+                    margin: 0 auto;
+                    .system_content{
+                      margin-top: 50px;
+                      .system_01{
+                        display: flex;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #004656;
+                        .title{
+                          background-color: #c56900;
+                          writing-mode: vertical-rl;
+                          text-orientation: upright;
+                          color: #fff;
+                          padding: 0 5px;
+                          margin: 0 10px 10px 0;
+                        }
+                        .inner{
+                          .list{
+                            display: flex;
+                            .list_inner{
+                              width: calc(100%/3);
+                              margin: 0 10px;
+                              .text_area{
+                                text-align: left;
+                                margin-bottom: 20px;
+                                .midashi{
+                                  color: #928055;
+                                  font-size: 16px;
+                                  margin-bottom: 10px;
+                                  letter-spacing: -0.1em;
+                                }
+                                .text{
+                                  font-size: 15px;
+                                  .small{
+                                    font-size: 10px;
+                                  }
+                                }
+                              }
+                              .image_01{
+                                width: 100%;
+                                margin: 0 auto;
+                                display: flex;
+                                align-items: flex-end;
+                                font-size: 10px;
+                                writing-mode: horizontal-tb;
+                                position: relative;
+                                img{
+                                  width: 60%;
+                                  margin: 0 auto;
+                                }
+                                p{
+                                  position: absolute;
+                                  right: 0;
+                                }
+                              }
+                              .image_02{
+                                display: flex;
+                                align-items: flex-end;
+                                width: 100%;
+                                margin: 0 auto;
+                                font-size: 10px;
+                                writing-mode: horizontal-tb;
+                                position: relative;
+                                img{
+                                  width: 60%;
+                                  margin: 0 auto;
+                                }
+                                p{
+                                  position: absolute;
+                                  right: 0;
+                                  text-align: left;
+                                  white-space: nowrap;
+                                  letter-spacing: -0.05em;
+                                }
+                              }
+                              .image_03{
+                                width: 100%;
+                                display: block;
+                                align-items: flex-end;
+                                font-size: 10px;
+                                writing-mode: horizontal-tb;
+                                .small{
+                                  display: flex;
+                                  justify-content: space-between;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .system_02{
+                        display: flex;
+                        padding-top: 20px;
+                        .title{
+                          background-color: #228bba;
+                          writing-mode: vertical-rl;
+                          text-orientation: upright;
+                          color: #fff;
+                          padding: 0 5px;
+                          margin: 0 10px 10px 0;
+                        }
+                        .inner{
+                          .list{
+                            display: flex;
+                            .list_inner{
+                              width: calc(100%/3);
+                              margin: 0 10px;
+                              .text_area{
+                                text-align: left;
+                                margin-bottom: 20px;
+                                .midashi{
+                                  color: #928055;
+                                  font-size: 16px;
+                                  margin-bottom: 10px;
+                                  letter-spacing: -0.1em;
+                                }
+                                .spacing{
+                                  color: #928055;
+                                  font-size: 14px;
+                                  margin-bottom: 10px;
+                                  letter-spacing: 0em;
+                                }
+                                .text{
+                                  font-size: 15px;
+                                }
+                              }
+                              .image_01{
+                                width: 80%;
+                                margin: 0 auto;
+                                font-size: 10px;
+                                writing-mode: horizontal-tb;
+                                p{
+                                  text-align: right;
+                                }
+                              }
+                              .image_02{
+                                width: 60%;
+                                margin: 0 auto;
+                                font-size: 10px;
+                                writing-mode: horizontal-tb;
+                                p{
+                                  text-align: right;
+                                }
+                              }
+                              .kagi{
+                                .kagi_inner{
+                                  display: flex;
+                                  .text_area{
+                                    width: 65%;
+                                    margin-right: 10px;
+                                    .midashi{
+                                      letter-spacing: 0em;
+                                    }
+                                  }
+                                  .image_03{
+                                    p{
+                                      font-size: 10px;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .glas{
+                        display: flex;
+                        position: relative;
+                        margin: 50px;
+                        .image{
+                          position: absolute;
+                          top: -30px;
+                          right: 50px;
+                          img{
+                            width: 70%;
+                          }
+                        }
+                        .glas_inner{
+                          width: 100%;
+                          border: 1px solid #004656;
+                          text-align: left;
+                          padding: 20px 30px;
+                          .title{
+                            color: #928055;
+                            font-size: 18px;
+                            padding-bottom: 10px;
+                          }
+                        }
+                      }
+                      .alsok{
+                        width: 100%;
+                        .title{
+                          text-align: left;
+                          font-size: 24px;
+                          color: #004656;
+                          padding-bottom: 10px;
+                          border-bottom: 1px solid #004656;
+                        }
+                        .list{
+                          display: flex;
+                          justify-content: space-between;
+                          margin-top: 20px;
+                          .inner{
+                            width: calc(95%/2);
+                            .text{
+                              display: block;
+                              text-align: left;
+                              .midashi{
+                                color: #928055;
+                                font-size: 18px;
+                              }
+                            }
+                          }
+                          .inner_01{
+                            .midashi_area{
+                              display: block;
+                              color: #928055;
+                              font-size: 18px;
+                              text-align: left;
+                              margin: 10px 0;
+                            }
+
+                            .image{
+                              margin-top: 10px;
+                              p{
+                                font-size: 10px;
+                                text-align: right;
+                              }
+                            }
+                            .content{
+                              display: flex;
+                              .caption{
+                                width: 40%;
+                                text-align: left;
+                                margin-right: 10px;
+                              }
+                            }
+                          }
+                          .inner_02{
+                            .midashi_area{
+                              display: flex;
+                              align-items: center;
+                              margin-bottom: 10px;
+                              white-space: nowrap;
+                              img{
+                                width: 35%;
+                              }
+                            }
+                            .image{
+                              margin-top: 10px;
+                              p{
+                                font-size: 10px;
+                                text-align: right;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .chushaku{
+                  text-align: left;
+                  font-size: 10px;
+                  line-height: normal;
+                  margin-top: 50px;
+                }
+              }
+              .content_03{
+                font-size: 18px;
+                .economy{
+                  width: 95%;
+                  margin: 0 auto;
+                  margin-top: 50px;
+                  .title{
+                    text-align: left;
+                    .font{
+                      color: #928055;
+                      font-size: 22px;
+                      span{
+                        color: #004656;
+                      }
+                    }
+                  }
+                  .container_01{
+                    .midashi{
+                      margin-top: 40px;
+                      color: #004656;
+                      border-bottom: 1px solid #004656;
+                      text-align: left;
+                      font-size: 22px;
+                      padding-bottom: 10px;
+                    }
+                    .inner{
+                      margin-top: 30px
+                    }
+                  }
+                  .container_02{
+                    .midashi{
+                      margin-top: 40px;
+                      color: #004656;
+                      border-bottom: 1px solid #004656;
+                      text-align: left;
+                      font-size: 22px;
+                      padding-bottom: 10px;
+                    }
+                    .inner{
+                      .shikumi{
+                        display: flex;
+                        justify-content: space-around;
+                        margin: 30px 0 20px 0;
+                        .shikumi_inner{
+                          display: flex;
+                          align-items: center;
+                          .text_area{
+                            display: flex;
+                            font-size: 15px;
+                            .midashi{
+                              background-color: #286FB7;
+                              color: #fff;
+                              display: inline-block;
+                              text-align: center;
+                              margin: 0;
+                              padding: 9px;
+                              line-height: 1.3em;
+                              font-size: 16px;
+                            }
+                            .text{
+                              text-align: left;
+                              margin-left: 10px;
+                              line-height: 1.3em;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .ryokin{
+                      display: flex;
+                      justify-content: space-between;
+                      margin: 0 auto;
+                      .ryokin_01{
+                        padding-right: 10px;
+                      }
+                      .ryokin_img_02{
+                        width: 65%;
+                      }
+                    }
+                    .bikou{
+                      margin-top: 10px;
+                      font-size: 10px;
+                      text-align: left;
+                      line-height: 1.3em;
+                    }
+                  }
+                }
+
+                .comfort{
+                  margin-top: 100px;
+                  .title{
+                    text-align: left;
+                    .font{
+                      color: #928055;
+                      font-size: 22px;
+                      span{
+                        color: #004656;
+                      }
+                    }
+                  }
+                  .comfort_inner{
+                    margin-top: 40px;
+                    .inner_01{
+                      display: flex;
+                      .text_area{
+                        text-align: left;
+                        width: 50%;
+                        font-size: 15px;
+                        .midashi{
+                          margin-bottom: 10px;
+                          color: #928055;
+                          font-size: 18px;
+                        }
+                        .text{
+                          line-height: 1.3em;
+                        }
+                      }
+                      .image{
+                        width: 50%;
+                        p{
+                          margin-top: 10px;
+                          font-size: 10px;
+                          text-align: left;
+                        }
+                      }
+                    }
+                    .inner_02{
+                      display: flex;
+                      justify-content: space-between;
+                      margin-top: 20px;
+                      .left{
+                        text-align: left;
+                        width: 59%;
+                        .midashi{
+                          margin-bottom: 10px;
+                          color: #928055;
+                          font-size: 18px;
+                        }
+                        .midashi_02{
+                          font-size: 18px;
+                          color: #004656;
+                          margin-bottom: 10px;
+                          span{
+                            font-size: 10px;
+                          }
+                        }
+                        .text{
+                          line-height: 1.3em;
+                        }
+                      }
+                      .right{
+                        display: flex;
+                        text-align: left;
+                        width: 39%;
+                        .text_area{
+                          width: 80%;
+                          .text{
+                            text-align: 1.3em;
+                            line-height: 1.3em;
+                            span{
+                              font-size: 10px;
+                            }
+                          }
+                          .midashi{
+                            margin-bottom: 10px;
+                            color: #928055;
+                            font-size: 18px;
+                          }
+                        }
+                        .image{
+                          width: 20%;
+                        }
+                      }
+                    }
+                    .inner_03{
+                      margin-top: 20px;
+                      display: flex;
+                      .text_area{
+                        width: 50%;
+                        text-align: left;
+                        margin-right: 10px;
+                        .midashi{
+                          margin-bottom: 10px;
+                          color: #928055;
+                          font-size: 18px;
+                        }
+                        .text{
+                          line-height: 1.3em;
+                          span{
+                            font-size: 10px;
+                          }
+                        }
+                      }
+                      .image{
+                        width: 50%;
+                        text-align: left;
+                        img{
+                          width: 50%;
+                        }
+                      }
+                    }
+                  }
+                }
+                .universal{
+                  margin-top: 100px;
+                  .title{
+                    text-align: left;
+                    margin-bottom: 40px;
+                    .font{
+                      color: #928055;
+                      font-size: 22px;
+                      span{
+                        color: #004656;
+                      }
+                    }
+                  }
+                  .ud_inner{
+                    .ud_list{
+                      .list_inner{
+                        display: flex;
+                        margin-bottom: 30px;
+                        .text_area{
+                          text-align: left;
+                          width: 50%;
+                          line-height: 1.3em;
+                          .midashi{
+                            margin-bottom: 10px;
+                            color: #928055;
+                            font-size: 18px;
+                          }
+                          .text{
+                            font-size: 15px;
+                          }
+                        }
+                        .image{
+                          width: 50%;
+                          img{
+                            width: 60%;
+                          }
+                          p{
+                            font-size: 10px;
+                            position: absolute;
+                            right: 10px;
+                            bottom: 10px;
+                          }
+                        }
+                      }
+                      .li_01{
+                        border-bottom: 1px solid #004656;
+                        padding-bottom: 20px;
+                        position: relative;
+                        .image{
+                          p{
+                            font-size: 10px;
+                            text-align: right;
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
+                          }
+                        }
+                      }
+                      .li_02{
+                        .image{
+                          width: 100%;
+                          position: relative;
+                          text-align: right;
+                          img{
+                            width: 70%;
+                          }
+                          p{
+                            font-size: 10px;
+                            position: absolute;
+                            right: 10px;
+                            bottom: 10px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .chushaku{
+                  margin-top: 100px;
+                  font-size: 10px;
+                  text-align: left;
+                }
+              }
+              .content_04{
+                width: 95%;
+                margin: 0 auto;
+                .title{
+                  color: #938055;
+                  font-size: 22px;
+                  text-align: left;
+                  margin: 50px 0;
+                }
+                .structure{
+                  .list{
+                    display: flex;
+                    justify-content: space-around;
+                    border-bottom: 1px solid #004656;
+                    padding-bottom: 30px;
+                    margin-bottom: 30px;
+                    .inner{
+                      display: flex;
+                      .text_area{
+                        width: 50%;
+                        text-align: left;
+                        .midashi{
+                          margin-bottom: 10px;
+                          color: #928055;
+                          font-size: 18px;
+                          letter-spacing: -0.05em;
+                          white-space: nowrap;
+                        }
+                        .text{
+                          line-height: 1.3em;
+                        }
+                      }
+                      .image{
+                        width: 48%;
+                        margin: 0 auto;
+                        p{
+                          font-size: 10px;
+                          text-align: right;
+                        }
+                      }
+                    }
+                  }
+                  .list_top{
+                    display: flex;
+                    .list_01{
+                      display: block;
+                      border-bottom: none;
+                      margin-bottom: 0;
+                      display: flex;
+                        .left{
+                          width: 100%;
+                          padding-bottom: 30px;
+                          border-bottom: 1px solid #004656;
+                          .inner{
+                            display: flex;
+                            padding: 0 10px;
+                            justify-content: space-between;
+                            .list_inner{
+                              display: flex;
+                              width: calc(97%/2);
+                              .image{
+                                width: 50%;
+                              }
+                            }
+                          }
+                        }
+                        .right{
+                          width: 30%;
+                          text-align: left;
+                          .midashi{
+                            margin-bottom: 10px;
+                            color: #928055;
+                            font-size: 18px;
+                            letter-spacing: -0.05em;
+                            white-space: nowrap;
+                          }
+                          .text{
+                            line-height: 1.3em;
+                          }
+                      }
+                    }
+                    .list_02{
+                      display: block;
+                      border-bottom: none;
+                      .left{
+                        .inner{
+                          justify-content: space-between;
+                          .inner_01{
+                            width: 58%;
+                            display: flex;
+                            padding: 0 5px;
+                          }
+                          .inner_02{
+                            width: 38%;
+                            .text_area{
+                              width: 100%
+                            }
+                            .image{
+                              width: 100%;
+                              margin-top: 10px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .list_right{
+                      width: 30%;
+                      padding-left: 10px;
+                      .inner_01,.inner_02{
+                        width: 100%;
+                        text-align: left;
+                        .midashi{
+                          margin-bottom: 10px;
+                          color: #928055;
+                          font-size: 18px;
+                          letter-spacing: -0.05em;
+                          white-space: nowrap;
+                        }
+                        .text{
+                          line-height: 1.3em;
+                        }
+                      }
+                      .inner_02{
+                        margin-top: 20px;
+                      }
+                    }
+                  }
+                  .list_03{
+                    border-top: 1px solid #004656;
+                    padding-top: 30px;
+                    .inner{
+                      width: calc(100%/2);
+                      padding: 0 10px;
+                      .text_area{
+                        width: 50%;
+                        .midashi{
+                          span{
+                            font-size: 10px;
+                          }
+                        }
+                      }
+                      .image{
+                        width: 50%;
+                      }
+                    }
+                  }
+                  .list_04{
+                    .inner{
+                      padding: 0 5px;
+                      .text_area{
+                        .text{
+                          span{
+                            font-size: 10px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .list_05{
+                    border-bottom: none;
+                    .inner{
+                      width: calc(100%/3);
+                      padding: 0 10px;
+                      .text_area{
+                        .text{
+                          span{
+                            font-size: 10px;
+                            line-height: normal;
+                          }
+                        }
+                      }
+                    }
+                    .inner_03{
+                      .text_area{
+                        width: 100%;
+                        .text{
+                          margin-bottom: 20px;
+                        }
+                      }
+                    }
+                  }
+                }
+                .chushaku{
+                  font-size: 10px;
+                  text-align: left;
+                }
+              }
+            }
+        }
+        // ______________________________________
+        @media screen and (max-width: inc_set.$media_sp){
+          .pc{
+            display: none;
+          }
+          .sp{
+            display: block;
+          }
+          .top{
+            width: 100vw;
+            position: relative;
+            p{
+              color: #fff;
+              position: absolute;
+              top: 45%;
+              left: 35%;
+              font-size: 30px;
+            }
+          }
+          .main_inner{
+            width: 95vw;
+            margin-top: 30px;
+            .pc{
+              display: none;
+            }
+            .sp{
+              display: block;
+            }
+              .tab{
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .tab_in{
+                  width: calc(95%/2);
+                  margin-top: 5px;
+                  font-size: 14px;
+                }
+              }
+              .content_area{
+                .content_01{
+                  .sp{
+                    font-size: 13px;
+                    margin-top: 10px;
+                    text-align: left;
+                  }
+                  .kitchen{
+                    margin-top: 20px;
+                    .title{
+                      text-align: left;
+                      display: flex;
+                      align-items: center;
+                      .font{
+                        color: #004D4A;
+                        width: 30%;
+                        display: block;
+                        font-size: 15px;
+                        span{
+                          color: #000;
+                        }
+                      }
+                      .border{
+                        height: 1px;
+                        width:70%;
+                        background-color: #938055;
+                      }
+                    }
+                    .list{
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      margin-top: 20px;
+                      .inner{
+                        text-align: left;
+                        width: calc(95%/2);
+                        margin-bottom: 20px;
+                        .midashi{
+                          color: #004D4A;
+                          margin-top: 5px;
+                          font-size: 14px;
+                          span{
+                            font-size: 10px;
+                          }
+                          p{
+                            font-size: 14px;
+                          }
+                        }
+                        .text{
+                          margin-top: 5px;
+                          font-size: 12px;
+                          line-height: 1.3em;
+                        }
+                      }
+                    }
+                  }
+                  .restroom{
+                    margin-top: 50px;
+                    .title{
+                      text-align: left;
+                      align-items: center;
+                      display: flex;
+                      .font{
+                        color: #004D4A;
+                        width: 30%;
+                        font-size: 14px;
+                        display: block;
+                        span{
+                          color: #000;
+                        }
+                      }
+                      .border{
+                        height: 1px;
+                        width:70%;
+                        background-color: #938055;
+                      }
+                    }
+                    .list{
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      margin-top: 20px;
+                      .inner{
+                        text-align: left;
+                        margin-bottom: 20px;
+                        width: calc(95%/2);
+                        .image{
+                          display: flex;
+                          img{
+                            width: 50%;
+                          }
+                        }
+                        .midashi{
+                          color: #004D4A;
+                          margin-top: 5px;
+                          font-size: 14px;
+                        }
+                        .text{
+                          margin-top: 5px;
+                          font-size: 12px;
+                          line-height: 1.3em;
+                        }
+                        .small{
+                          font-size: 10px;
+                        }
+                      }
+                    }
+                    .inner_02{
+                      .img{
+                        text-align: center;
+                        margin: 0 auto;
+                        width: 75%;
+                        img{
+                          width: 100%;
+                        }
+                      }
+                    }
+                  }
+                  .bathroom{
+                    margin-top: 50px;
+                    .title{
+                      text-align: left;
+                      display: flex;
+                      align-items: center;
+                      .font{
+                        color: #004D4A;
+                        width: 40%;
+                        font-size: 14px;
+                        display: block;
+                        span{
+                          color: #000;
+                        }
+                      }
+                      .border{
+                        height: 1px;
+                        width:60%;
+                        background-color: #938055;
+                      }
+                    }
+                    .list{
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      margin-top: 20px;
+                      .inner{
+                        text-align: left;
+                        margin-bottom: 20px;
+                        width: calc(95%/2);
+                        .text_area{
+                          white-space: fit-content;
+                          .small{
+                            font-size: 10px;
+                          }
+                        }
+                        .image{
+                          display: flex;
+                          img{
+                            width: 50%;
+                          }
+                        }
+                        .midashi{
+                          color: #004D4A;
+                          margin-top: 5px;
+                          font-size: 14px;
+                        }
+                        .text{
+                          margin-top: 5px;
+                          font-size: 12px;
+                          line-height: 1.3em;
+                        }
+                      }
+                    }
+                  }
+                  .powderroom{
+                    margin-top: 50px;
+                    .title{
+                      text-align: left;
+                      display: flex;
+                      align-items: center;
+                      .font{
+                        color: #004D4A;
+                        width: 40%;
+                        font-size: 14px;
+                        display: block;
+                        span{
+                          color: #000;
+                        }
+                      }
+                      .border{
+                        height: 1px;
+                        width:60%;
+                        background-color: #938055;
+                      }
+                    }
+                    .list{
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      margin-top: 20px;
+                      .inner{
+                        text-align: left;
+                        margin-bottom: 20px;
+                        width: calc(95%/2);
+                        .image{
+                          display: flex;
+                          img{
+                            width: 50%;
+                          }
+                        }
+                        .midashi{
+                          color: #004D4A;
+                          margin-top: 5px;
+                          font-size: 14px;
+                        }
+                        .text{
+                          margin-top: 5px;
+                          font-size: 12px;
+                          line-height: 1.3em;
+                        }
+                      }
+                    }
+                  }
+                }
+                .content_02{
+                  .security{
+                    .top{
+                      width: 100%;
+                      position: relative;
+                      margin: 10px auto;
+                      .image{
+                        width:   95%;
+                        padding: 0;
+                      }
+                      .text{
+                        p{
+                          color: #004656;
+                          position: static;
+                          text-align: left;
+                          font-size: 18px;
+                          margin: 20px 0;
+                        }
+                      }
+                    }
+                    .system{
+                      width: 100%;
+                      .system_content{
+                        margin-top: 20px;
+                        .system_01{
+                          display: block;
+                          padding-bottom: 20px;
+                          border-bottom: 1px solid #004656;
+                          .title{
+                            background-color: #c56900;
+                            color: #fff;
+                            padding: 5px;
+                            margin: 0 0 10px 0;
+                            writing-mode: horizontal-tb;
+                          }
+                          .inner{
+                            line-height: 1.3em;
+                            .list{
+                              width: 95%;
+                              margin: 0 auto;
+                              display: flex;
+                              flex-wrap: wrap;
+                              .list_inner{
+                                width: calc(98%/2);
+                                margin: 0;
+                                .text_area{
+                                  text-align: left;
+                                  margin-bottom: 20px;
+                                  .midashi{
+                                    color: #928055;
+                                    font-size: 14px;
+                                    margin-bottom: 5px;
+                                    line-height: 1.3em;
+                                    letter-spacing: -0.25em;
+                                  }
+                                  .text{
+                                    font-size: 12px;
+                                    line-height: 1.3em;
+                                    padding-right: 5px;
+                                    .small{
+                                      font-size: 10px;
+                                    }
+                                  }
+                                }
+                                .image_01{
+                                  width: 100%;
+                                  margin: 0 auto;
+                                  display: flex;
+                                  align-items: flex-end;
+                                  p{
+                                    margin-bottm: -20px;
+                                  }
+                                  img{
+                                    width: 45%;
+                                  }
+                                }
+                                .image_02{
+                                  display: flex;
+                                  align-items: flex-end;
+                                  width: 100%;
+                                  margin: 0 auto 10px auto;
+                                  p{
+                                    line-height: 1em;
+                                  }
+                                }
+                                .image_03{
+                                  width: 100%;
+                                  display: flex;
+                                  align-items: flex-end;
+                                }
+                              }
+                              .inner_03{
+                                display: flex;
+                                width: 100%;
+                                margin-top: 20px;
+                                .text_area{
+                                  display: block;
+                                  width: 50%;
+                                  .text{
+                                    .small{
+                                      font-size: 10px;
+                                      line-height: 1.3em;
+                                    }
+                                  }
+                                }
+                                .image_03{
+                                  width: 50%;
+                                  display: block;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        .system_02{
+                          display: block;
+                          padding-top: 20px;
+                          .title{
+                            background-color: #228bba;
+                            writing-mode: horizontal-tb;
+                            text-orientation: upright;
+                            color: #fff;
+                            padding: 5px;
+                            margin: 0 0 10px 0;
+                          }
+                          .inner{
+                            .list{
+                              display: flex;
+                              width: 100%;
+                              flex-wrap: wrap;
+                              .list_inner{
+                                width: calc(85%/2);
+                                margin: 0 10px;
+                                .text_area{
+                                  text-align: left;
+                                  margin-bottom: 20px;
+                                  .midashi{
+                                    color: #928055;
+                                    font-size: 14px;
+                                    margin-bottom: 5px;
+                                    line-height: 1.3em;
+                                    letter-spacing: -0.25em;
+                                  }
+                                  .text{
+                                    font-size: 12px;
+                                    line-height: 1.3em;
+                                    .small{
+                                      font-size: 10px;
+                                    }
+                                  }
+                                }
+                                .image_01{
+                                  width: 80%;
+                                  margin: 0 auto;
+                                }
+                                .image_02{
+                                  width: 60%;
+                                  margin: 0 auto;
+                                }
+                                .kagi{
+                                  .kagi_inner{
+                                    display: flex;
+                                    .text_area{
+                                      width: 100%;
+                                      margin-right: 10px;
+                                      .midashi{
+                                        margin-bottom: 5px;
+                                      }
+                                      .text{
+                                        margin-bottom: 10px;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              .inner_03{
+                                width: 100%;
+                              }
+                            }
+                          }
+                        }
+                        .glas{
+                          display: flex;
+                          position: relative;
+                          margin: 30px 10px;
+                          .image{
+                            position: static;
+                            img{
+                              width: 90%;
+                            }
+                          }
+                          .glas_inner{
+                            width: 100%;
+                            border: 1px solid #004656;
+                            text-align: left;
+                            display: flex;
+                            align-items: center;
+                            padding: 5px;
+                            .text{
+                              width: 50%;
+                              font-size: 12px;
+                              line-height: 1.3em;
+                              margin-right: 10px;
+                              .title{
+                                color: #928055;
+                                font-size: 14px;
+                                padding-bottom: 4px;
+                              }
+                            }
+                            .image{
+                              width: 50%;
+                            }
+                          }
+                        }
+                        .alsok{
+                          width: 100%;
+                          .title{
+                            text-align: left;
+                            font-size: 18px;
+                            color: #004656;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #004656;
+                          }
+                          .list{
+                            display: block;
+                            margin-top: 10px;
+                            .inner{
+                              width: 100%;
+                              .text{
+                                display: block;
+                                text-align: left;
+                                font-size: 12px;
+                                line-height: 1.3em;
+                                .midashi{
+                                  color: #928055;
+                                  font-size: 14px;
+                                }
+                              }
+                            }
+                            .inner_01{
+                              margin-bottom: 10px;
+                              .midashi_area{
+                                display: block;
+                                color: #928055;
+                                font-size: 14px;
+                                text-align: left;
+                                margin: 10px 0;
+                              }
+                              .content{
+                                display: flex;
+                                .caption{
+                                  width: 50%;
+                                  text-align: left;
+                                  margin-right: 5px;
+                                  font-size: 12px;
+                                  line-height: 1.3em;
+                                }
+                                .image{
+                                  width: 50%;
+                                }
+                              }
+                            }
+                            .inner_02{
+                              .midashi_area{
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 10px;
+                                letter-spacing: -0.11em;
+                                white-space: nowrap;
+                                img{
+                                  width: 35%;
+                                }
+                              }
+                              .image{
+                                margin-top: 20px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .chushaku{
+                    text-align: left;
+                    font-size: 10px;
+                    line-height: normal;
+                    margin-top: 50px;
+                  }
+                }
+                .content_03{
+                  font-size: 12px;
+                  .economy{
+                    width: 95%;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                    .title{
+                      text-align: left;
+                      .font{
+                        color: #928055;
+                        font-size: 18px;
+                        span{
+                          color: #004656;
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                    .container_01{
+                      .midashi{
+                        margin-top: 20px;
+                        font-size: 13px;
+                        padding-bottom: 10px;
+                      }
+                      .inner{
+                        margin-top: 30px
+                      }
+                    }
+                    .container_02{
+                      .midashi{
+                        margin-top: 20px;
+                        font-size: 13px;
+                        padding-bottom: 10px;
+                      }
+                      .inner{
+                        .shikumi{
+                          display: block;
+                          margin-top: 10px;
+                          .shikumi_inner{
+                            display: block;
+                            margin-bottom: 10px;
+                            .text_area{
+                              display: flex;
+                              font-size: 10px;
+                              align-items: center;
+                              .midashi{
+                                font-size: 11px;
+                                padding: 5px;
+                                white-space: nowrap;
+                              }
+                              .text{
+                                font-size: 12px;
+                                text-align: left;
+                                margin-left: 10px;
+                                line-height: 1.3em;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .ryokin{
+                        width: 95%;
+                        display: block;
+                        .ryokin_01{
+                          width: 100%;
+                          margin: 20px 0;
+                        }
+                      }
+                      .bikou{
+                        margin-top: 10px;
+                        font-size: 10px;
+                        text-align: left;
+                        line-height: 1.3em;
+                      }
+                    }
+                  }
+
+                  .comfort{
+                    width: 95%;
+                    margin: 50px auto 0 auto;
+                    .title{
+                      text-align: left;
+                      .font{
+                        color: #928055;
+                        font-size: 18px;
+                        span{
+                          color: #004656;
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                    .comfort_inner{
+                      margin-top: 20px;
+                      .inner_01{
+                        display: block;
+                        .text_area{
+                          text-align: left;
+                          width: 100%;
+                          .midashi{
+                            margin-bottom: 10px;
+                            color: #928055;
+                            font-size: 15px;
+                            letter-spacing: -0.05em;
+                          }
+                          .text{
+                            line-height: 1.3em;
+                          }
+                        }
+                        .image{
+                          width: 100%;
+                          margin-top: 20px;
+                          p{
+                            margin-top: 10px;
+                            font-size: 12px;
+                            text-align: left;
+                          }
+                        }
+                      }
+                      .inner_02{
+                        display: block;
+                        margin: 20px 0;
+                        .left{
+                          text-align: left;
+                          width: 100%;
+                          .midashi{
+                            margin-bottom: 10px;
+                            white-space: nowrap;
+                            letter-spacing: -0.05em;
+                            color: #928055;
+                            font-size: 15px;
+                          }
+                          .midashi_02{
+                            font-size: 15px;
+                            color: #004656;
+                            letter-spacing: -0.14em;
+                            margin-bottom: 10px;
+                            span{
+                              font-size: 10px;
+                              color: #000;
+                            }
+                          }
+                          .text{
+                            line-height: 1.3em;
+                          }
+                        }
+                        .right{
+                          margin-top: 20px;
+                          display: flex;
+                          text-align: left;
+                          width: 100%;
+                          .text_area{
+                            width: 80%;
+                            .text{
+                              text-align: 1.3em;
+                              line-height: 1.3em;
+                              span{
+                                font-size: 10px;
+                              }
+                            }
+                            .midashi{
+                              margin-bottom: 10px;
+                              letter-spacing: -0.05em;
+                              color: #928055;
+                              font-size: 18px;
+                            }
+                          }
+                          .image{
+                            width: 20%;
+                          }
+                        }
+                      }
+                      .inner_03{
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: flex-end;
+                        .text_area{
+                          width: 50%;
+                          text-align: left;
+                          margin-right: 10px;
+                          .midashi{
+                            margin-bottom: 10px;
+                            letter-spacing: -0.05em;
+                            color: #928055;
+                            font-size: 18px;
+                          }
+                          .text{
+                            line-height: 1.3em;
+                            span{
+                              font-size: 10px;
+                            }
+                          }
+                        }
+                        .image{
+                          width: 50%;
+                          text-align: left;
+                          img{
+                            width: 100%;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .universal{
+                    width: 95%;
+                    margin: 50px auto 0 auto;
+                    .title{
+                      text-align: left;
+                      margin-bottom: 20px;
+                      .font{
+                        color: #928055;
+                        font-size: 18px;
+                        span{
+                          color: #004656;
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                    .ud_inner{
+                      .ud_list{
+                        .list_inner{
+                          margin-bottom: 20px;
+                          .text_area{
+                            .midashi{
+                              margin-bottom: 10px;
+                              letter-spacing: -0.08em;
+                              color: #928055;
+                              font-size: 14px;
+                            }
+                            .text{
+                              font-size: 12px;
+                            }
+                          }
+                          .image{
+                            width: 50%;
+                            img{
+                              width: 100%;
+                            }
+                          }
+                        }
+                        .li_01{
+                          border-bottom: 1px solid #004656;
+                          padding-bottom: 20px;
+                          .midashi{
+                            font-size: 14px;
+                            letter-spacing: -0.08em;
+                          }
+                          .text{
+                            font-size: 12px;
+                          }
+                          .image{
+                            p{
+                              font-size: 10px;
+                              text-align: right;
+                            }
+                          }
+                        }
+                        .li_02{
+                          display: block;
+                          .text_area{
+                            width: 100%;
+                            .midashi{
+                              margin-bottom: 5px;
+                              font-size: 14px;
+                              letter-spacing: -0.08em;
+                            }
+                            .text{
+                              margin-bottom: 10px;
+                              font-size: 12px;
+                            }
+                          }
+                          .image{
+                            width: 100%;
+                            position: relative;
+                            img{
+                              width: 100%;
+                            }
+                            p{
+                              font-size: 10px;
+                              position: absolute;
+                              right: 10px;
+                              bottom: 10px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .chushaku{
+                    margin-top: 50px;
+                    font-size: 10px;
+                    text-align: left;
+                  }
+                }
+                .content_04{
+                  width: 95%;
+                  margin: 0 auto;
+                  font-size: 12px;
+                  .title{
+                    color: #938055;
+                    font-size: 22px;
+                    text-align: left;
+                    margin: 20px 0;
+                  }
+                  .structure{
+                    .list{
+                      display: block;
+                      border-bottom: none;
+                      padding-bottom: 0;
+                      margin-bottom: 30px;
+                      .inner{
+                        display: block;
+                        .text_area{
+                          width: 100%;
+                          text-align: left;
+                          .midashi{
+                            margin-bottom: 10px;
+                            color: #928055;
+                            font-size: 15px;
+                          }
+                          .text{
+                            line-height: 1.3em;
+                          }
+                        }
+                        .image{
+                          width: 100%;
+                        }
+                      }
+                    }
+                    .list_top{
+                      display: block;
+                      .list_01{
+                        border-bottom: none;
+                        margin-bottom: 0;
+                        .left{
+                          width: 100%;
+                          border-bottom: none;
+                          .inner{
+                            display: block;
+                            padding: 0;
+                            .list_inner{
+                              display: flex;
+                              margin-bottom: 20px;
+                              width: 100%;
+                              .image{
+                                width: 100%;
+                                img{
+                                  width: 90%;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        .right{
+                          width: 100%;
+                          .midashi{
+                            margin-bottom: 10px;
+                            color: #928055;
+                            font-size: 15px;
+                            text-align: left;
+                          }
+                          .text{
+                            line-height: 1.3em;
+                          }
+                        }
+                      }
+                      .list_02{
+                        margin: 30px auto;
+                        .left{
+                          width: 100%;
+                          .inner{
+                            .inner_01{
+                              width: 100%;
+                              padding: 0 5px;
+                              margin-bottom: 20px;
+                              .text_area{
+                                width: 50%;
+                              }
+                              .image{
+                                width: 50%;
+                                img{
+                                  width: 90%;
+                                }
+                              }
+                            }
+                            .inner_02{
+                              width: 100%;
+                              margin-bottom: 20px;
+                              .text_area{
+                                width: 100%
+                              }
+                              .image{
+                                width: 100%;
+                                margin-top: 10px;
+                              }
+                            }
+                          }
+                          }
+                        .right{
+                          width: 100%;
+                          text-align: left;
+                          .midashi{
+                            margin-bottom: 10px;
+                            color: #928055;
+                            font-size: 15px;
+                          }
+                          .text{
+                            line-height: 1.3em;
+                          }
+                        }
+                      }
+                    }
+                    .list_03{
+                      border-top: none;
+                      .inner{
+                        width: 100%;
+                        padding: 0;
+                        display: flex;
+                        margin-bottom: 30px;
+                        .text_area{
+                          width: 50%;
+                        }
+                        .image{
+                          width: 50%;
+                          img{
+                            width: 90%;
+                          }
+                        }
+                      }
+                    }
+                    .list_04{
+                      .inner{
+                        margin-bottom: 20px;
+                        padding: 0 5px;
+                        .text_area{
+                          .text{
+                            span{
+                              font-size: 10px;
+                            }
+                          }
+                        }
+                        .image{
+                          margin-top: 10px;
+                        }
+                      }
+                    }
+                    .list_05{
+                      border-bottom: none;
+                      .inner{
+                        width: 100%;
+                        padding: 0;
+                        margin-bottom: 20px;
+                        display: flex;
+                        .text_area{
+                          .text{
+                            span{
+                              font-size: 10px;
+                              line-height: normal;
+                            }
+                          }
+                        }
+                        .image{
+                          img{
+                            width: 80%;
+                          }
+                        }
+                      }
+                      .inner_03{
+                        .text_area{
+                          width: 100%;
+                          .text{
+                            margin-bottom: 20px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .chushaku{
+                    font-size: 10px;
+                    text-align: left;
+                    line-height: 1.3em;
+                  }
+                }
+              }
+            }
+
+        /*@media screen end*/}
+        // ______________________________________
+        // ______________________________________
+        // ______________________________________
+      }
+    }
+  }
+  // ______________________________________
+  @media screen and (max-width: inc_set.$media_sp){
+
+  /*@media screen end*/}
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @media screen and (max-width: inc_set.$media_sp){
+
+  /*@media screen end*/}
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @media screen and (max-width: inc_set.$media_sp){
+
+  /*@media screen end*/}
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+
+  // ______________________________________
+  @media screen and (max-width: inc_set.$media_sp){
+
+  /*@media screen end*/}
+  // ______________________________________
+  // ______________________________________
+  // ______________________________________
+}

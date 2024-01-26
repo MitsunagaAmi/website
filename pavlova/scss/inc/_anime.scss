@@ -1,0 +1,1114 @@
+@use "setting" as inc_set;
+
+.scrollin_custom_anm{
+
+}
+
+.scrollin_anime_01{
+  opacity: 0;
+  transition: 1s;
+  &.scrollin{
+    opacity: 1;
+		.anm{
+			&:before,&:after{
+				width: 0;
+			}
+		}
+  }
+	.anm{
+		position: relative;
+		&:before,&:after{
+			content: "";
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			transition: 1s;
+		}
+		&:after{
+			background: #dbdcdd;
+		}
+		&:before{
+			background: #fff;
+		}
+	}
+	.anm_01{
+		&:after{
+			transition-delay: 0;
+		}
+		&:before{
+			transition-delay: .3s;
+		}
+	}
+	.anm_02{
+		&:after{
+			transition-delay: .2s;
+		}
+		&:before{
+			transition-delay: .5s;
+		}
+	}
+	.anm_03{
+		&:after{
+			transition-delay: .4s;
+		}
+		&:before{
+			transition-delay: .7s;
+		}
+	}
+	.anm_04{
+		&:after{
+			transition-delay: .6s;
+		}
+		&:before{
+			transition-delay: .9s;
+		}
+	}
+	.anm_05{
+		&:after{
+			transition-delay: .8s;
+		}
+		&:before{
+			transition-delay: 1.1s;
+		}
+	}
+	.anm_06{
+		&:after{
+			transition-delay: 1s;
+		}
+		&:before{
+			transition-delay: 1.3s;
+		}
+	}
+}
+
+
+.scrollin_anime_02{
+	opacity: 0;
+	transition: 2s;
+	&.scrollin{
+		opacity: 1;
+		.anm_box{
+			.anm{
+				transform: scale(1);
+			}
+		}
+	}
+	.anm_box{
+		overflow: hidden;
+		.anm{
+			transform-origin: center;
+			transform: scale(1.2);
+			transition: 2s;
+		}
+		.anm_01{
+			transition-delay: .3s;
+		}
+	}
+}
+
+
+.scrollin_anime_03{
+	&.scrollin{
+		.anm{
+			opacity: 1;
+		}
+	}
+	.anm{
+		opacity: 0;
+		transition: 1s;
+	}
+	.anm_01{
+		transition-delay: .5s;
+	}
+	.anm_02{
+		transition-delay: .7s;
+	}
+	.anm_03{
+		transition-delay: .9s;
+	}
+	.anm_04{
+		transition-delay: 1.1s;
+	}
+}
+
+
+
+
+
+/*-------anime0-------*/
+.anime0 {
+		opacity: 0;
+		filter: blur(100px);
+		transition: all 2s;
+}
+
+.anime0.scrollin {
+		opacity: 1;
+		filter: blur(0px);
+}
+
+.anime1 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+}
+
+.anime1.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime2 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 0.3s;
+}
+
+.anime2.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime3 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 0.6s;
+}
+
+.anime3.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime4 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 0.9s;
+}
+
+.anime4.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime5 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 1.2s;
+}
+
+.anime5.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime6 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 1.5s;
+}
+
+.anime6.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime7 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 1.8s;
+}
+
+.anime7.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime8 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 2.1s;
+}
+
+.anime8.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime9 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 2.4s;
+}
+
+.anime9.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime10 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 2.7s;
+}
+
+.anime10.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime11 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 3s;
+}
+
+.anime11.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime12 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 3.3s;
+}
+
+.anime12.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime13 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 3.6s;
+}
+
+.anime13.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime14 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 3.9s;
+}
+
+.anime14.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime15 {
+		opacity: 0;
+		transform: translate(0, 100px);
+		transition: all 1.5s;
+		transition-delay: 4.9s;
+}
+
+.anime15.scrollin {
+		opacity: 1;
+		transform: translate(0, 0);
+}
+
+.anime16 {
+		opacity: 0;
+		filter: blur(100px);
+		transition: all 2s;
+}
+
+.anime16.scrollin {
+		opacity: 1;
+		filter: blur(0px);
+}
+
+.anime17 {
+		opacity: 0;
+		filter: blur(100px);
+		transition: all 5s;
+}
+
+.anime17.scrollin {
+		opacity: 1;
+		filter: blur(0px);
+}
+
+/*-------anime1_0-------*/
+.anime1_1 {
+		opacity: 0;
+		transition: all 1.5s;
+}
+
+.anime1_1.scrollin {
+		opacity: 1;
+}
+
+.anime1_2 {
+		opacity: 0;
+		transition: all 0.5s;
+		transition-delay: 0.3s;
+}
+
+.anime1_2.scrollin {
+		opacity: 1;
+}
+
+.anime1_3 {
+		opacity: 0;
+		transition: all 0.5s;
+		transition-delay: 0.3s;
+}
+
+.anime1_3.scrollin {
+		opacity: 1;
+}
+
+.anime1_4 {
+		opacity: 0;
+		transition: all 0.5s;
+		transition-delay: 0.3s;
+}
+
+.anime1_4.scrollin {
+		opacity: 1;
+}
+
+.anime1_5 {
+		opacity: 0;
+		transition: all 0.5s;
+		transition-delay: 0.5s;
+}
+
+.anime1_5.scrollin {
+		opacity: 1;
+}
+
+.anime1_6 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 1.5s;
+}
+
+.anime1_6.scrollin {
+		opacity: 1;
+}
+
+.anime1_7 {
+		opacity: 0;
+		transition: all 0.5s;
+		transition-delay: 0.5s;
+}
+
+.anime1_7.scrollin {
+		opacity: 1;
+}
+
+.anime1_8 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 2.1s;
+}
+
+.anime1_8.scrollin {
+		opacity: 1;
+}
+
+.anime1_9 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 2.4s;
+}
+
+.anime1_9.scrollin {
+		opacity: 1;
+}
+
+.anime1_10 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 2.7s;
+}
+
+.anime1_10.scrollin {
+		opacity: 1;
+}
+
+.anime1_11 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 3s;
+}
+
+.anime1_11.scrollin {
+		opacity: 1;
+}
+
+.anime1_12 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 3.3s;
+}
+
+.anime1_12.scrollin {
+		opacity: 1;
+}
+
+.anime1_13 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 3.6s;
+}
+
+.anime1_13.scrollin {
+		opacity: 1;
+}
+
+.anime1_14 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 3.9s;
+}
+
+.anime1_14.scrollin {
+		opacity: 1;
+}
+
+.anime1_15 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 4.2s;
+}
+
+.anime1_15.scrollin {
+		opacity: 1;
+}
+
+.anime1_16 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 4.5s;
+}
+
+.anime1_16.scrollin {
+		opacity: 1;
+}
+
+.anime1_17 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 4.8s;
+}
+
+.anime1_17.scrollin {
+		opacity: 1;
+}
+
+.anime1_18 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 5.1s;
+}
+
+.anime1_18.scrollin {
+		opacity: 1;
+}
+
+/*-------anime2_0-------*/
+.anime2_1 {
+		opacity: 0;
+		transition: all 1.5s;
+}
+
+.anime2_1.scrollin {
+		opacity: 1;
+}
+
+.anime2_2 {
+		opacity: 0;
+		transition: all 1.5s;
+		transition-delay: 0.1s;
+}
+
+.anime2_2.scrollin {
+		opacity: 1;
+}
+
+.anime2_3 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.1s;
+}
+
+.anime2_3.scrollin {
+		opacity: 1;
+}
+
+.anime2_4 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.15s;
+}
+
+.anime2_4.scrollin {
+		opacity: 1;
+}
+
+.anime2_5 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.2s;
+}
+
+.anime2_5.scrollin {
+		opacity: 1;
+}
+
+.anime2_6 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.25s;
+}
+
+.anime2_6.scrollin {
+		opacity: 1;
+}
+
+.anime2_7 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.3s;
+}
+
+.anime2_7.scrollin {
+		opacity: 1;
+}
+
+.anime2_8 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.35s;
+}
+
+.anime2_8.scrollin {
+		opacity: 1;
+}
+
+.anime2_9 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.4s;
+}
+
+.anime2_9.scrollin {
+		opacity: 1;
+}
+
+.anime2_10 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.45s;
+}
+
+.anime2_10.scrollin {
+		opacity: 1;
+}
+
+.anime2_11 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.5s;
+}
+
+.anime2_11.scrollin {
+		opacity: 1;
+}
+
+.anime2_12 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.55s;
+}
+
+.anime2_12.scrollin {
+		opacity: 1;
+}
+
+.anime2_13 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.6s;
+}
+
+.anime2_13.scrollin {
+		opacity: 1;
+}
+
+.anime2_14 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.65s;
+}
+
+.anime2_14.scrollin {
+		opacity: 1;
+}
+
+.anime2_15 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.7s;
+}
+
+.anime2_15.scrollin {
+		opacity: 1;
+}
+
+.anime2_16 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.75s;
+}
+
+.anime2_16.scrollin {
+		opacity: 1;
+}
+
+.anime2_17 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.8s;
+}
+
+.anime2_17.scrollin {
+		opacity: 1;
+}
+
+.anime2_18 {
+		opacity: 0;
+		transition: all 0.3s;
+		transition-delay: 0.85s;
+}
+
+.anime2_18.scrollin {
+		opacity: 1;
+}
+
+/*-------anime3_0-------*/
+@keyframes opacity-anime3_0 {
+		0% {
+				opacity: 0;
+		}
+		50% {
+				opacity: 1;
+		}
+		100% {
+				opacity: 0;
+		}
+}
+.anime3_1 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.1s;
+}
+
+.anime3_2 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.2s;
+}
+
+.anime3_3 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.3s;
+}
+
+.anime3_4 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.4s;
+}
+
+.anime3_5 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.5s;
+}
+
+.anime3_6 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.6s;
+}
+
+.anime3_7 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.7s;
+}
+
+.anime3_8 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.8s;
+}
+
+.anime3_9 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 0.9s;
+}
+
+.anime3_10 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1s;
+}
+
+.anime3_11 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.1s;
+}
+
+.anime3_12 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.2s;
+}
+
+.anime3_13 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.3s;
+}
+
+.anime3_14 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.4s;
+}
+
+.anime3_15 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.5s;
+}
+
+.anime3_16 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.6s;
+}
+
+.anime3_17 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.7s;
+}
+
+.anime3_18 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.8s;
+}
+
+.anime3_19 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 1.9s;
+}
+
+.anime3_20 {
+		opacity: 0;
+		animation: opacity-anime3_0 2.2s ease forwards;
+		animation-delay: 2s;
+}
+
+/*-------anime00-------*/
+@keyframes blur-anime {
+		0% {
+				opacity: 0;
+				-ms-opacity: 0;
+				-moz-opacity: 0;
+		}
+		50% {
+				opacity: 0.5;
+				-ms-opacity: 0.5;
+				-moz-opacity: 0.5;
+		}
+		100% {
+				opacity: 1;
+				-ms-opacity: 1;
+				-moz-opacity: 1;
+		}
+}
+.anime01 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 0.3s;
+		-ms-animation-delay: 0.3s;
+		-moz-animation-delay: 0.3s;
+}
+
+.anime02 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 0.6s;
+		-ms-animation-delay: 0.6s;
+		-moz-animation-delay: 0.6s;
+}
+
+.anime03 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 0.9s;
+		-ms-animation-delay: 0.9s;
+		-moz-animation-delay: 0.9s;
+}
+
+.anime04 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 1.2s;
+		-ms-animation-delay: 1.2s;
+		-moz-animation-delay: 1.2s;
+}
+
+.anime05 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 1.5s;
+		-ms-animation-delay: 1.5s;
+		-moz-animation-delay: 1.5s;
+}
+
+.anime06 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 1.8s;
+		-ms-animation-delay: 1.8s;
+		-moz-animation-delay: 1.8s;
+}
+
+.anime07 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 2.1s;
+		-ms-animation-delay: 2.1s;
+		-moz-animation-delay: 2.1s;
+}
+
+.anime08 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 2.4s;
+		-ms-animation-delay: 2.4s;
+		-moz-animation-delay: 2.4s;
+}
+
+.anime09 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 2.7s;
+		-ms-animation-delay: 2.7s;
+		-moz-animation-delay: 2.7s;
+}
+
+.anime00 {
+		opacity: 0;
+		animation: blur-anime 5s ease forwards;
+		-ms-animation: blur-anime 5s ease forwards;
+		-moz-animation: blur-anime 5s ease forwards;
+		animation-delay: 3s;
+		-ms-animation-delay: 3s;
+		-moz-animation-delay: 3s;
+}
+
+/*-------anime-0-------*/
+@keyframes opacity-anime {
+		0% {
+				opacity: 0;
+		}
+		50% {
+				opacity: 0.5;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+.anime-1 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 0.3s;
+		-moz-animation-delay: 0.3s;
+}
+
+.anime-2 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 0.6s;
+		-moz-animation-delay: 0.6s;
+}
+
+.anime-3 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 0.9s;
+		-moz-animation-delay: 0.9s;
+}
+
+.anime-4 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 1.2s;
+		-moz-animation-delay: 1.2s;
+}
+
+.anime-5 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 1.5s;
+		-moz-animation-delay: 1.5s;
+}
+
+.anime-6 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 1.8s;
+		-moz-animation-delay: 1.8s;
+}
+
+.anime-7 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 2.1s;
+		-moz-animation-delay: 2.1s;
+}
+
+.anime-8 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 2.4s;
+		-moz-animation-delay: 2.4s;
+}
+
+.anime-9 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 2.7s;
+		-moz-animation-delay: 2.7s;
+}
+
+.anime-10 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 3s;
+		-moz-animation-delay: 3s;
+}
+
+.anime-11 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 3.3s;
+		-moz-animation-delay: 3.3s;
+}
+
+.anime-12 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 3.6s;
+		-moz-animation-delay: 3.6s;
+}
+
+.anime-13 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 3.9s;
+		-moz-animation-delay: 3.9s;
+}
+
+.anime-14 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 4.2s;
+		-moz-animation-delay: 4.2s;
+}
+
+.anime-15 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 5s;
+		-moz-animation-delay: 5s;
+}
+
+.anime-16 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 5s;
+		-moz-animation-delay: 5.3s;
+}
+
+.anime-17 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 5s;
+		-moz-animation-delay: 5.6s;
+}
+
+.anime-18 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 5s;
+		-moz-animation-delay: 5.9s;
+}
+
+.anime-19 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 5s;
+		-moz-animation-delay: 6.2s;
+}
+
+.anime-20 {
+		opacity: 0;
+		animation: opacity-anime 5s ease forwards;
+		animation-delay: 5s;
+		-moz-animation-delay: 6.5s;
+}
